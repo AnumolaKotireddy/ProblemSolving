@@ -1,0 +1,6 @@
+E:\C#\CodingTest\CodingTest\bin\Debug\CodingTest.exe.config
+E:\C#\CodingTest\CodingTest\bin\Debug\CodingTest.exe
+E:\C#\CodingTest\CodingTest\bin\Debug\CodingTest.pdb
+E:\C#\CodingTest\CodingTest\obj\Debug\CodingTest.csprojResolveAssemblyReference.cache
+E:\C#\CodingTest\CodingTest\obj\Debug\CodingTest.exe
+E:\C#\CodingTest\CodingTest\obj\Debug\CodingTest.pdb
