@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,17 +11,17 @@ namespace CodingTest
         static void Main(string[] args)
         {
             //Find Characters count in Array of strings
-            //ReadArrayValues();
+            ReadArrayValues();
 
             //find object keys
-            findkeyvalues();
+            //findkeyvalues();
 
             //Reverse String
-            //ReverseStringSplit();
-            //ReverseStringWithoutSplit();
+            ReverseStringSplit();
+            ReverseStringWithoutSplit();
 
             // Remove Duplicate strings in array
-            //ReadDuplicateArrayValues();
+            ReadDuplicateArrayValues();
 
             Console.ReadLine();
 
@@ -92,19 +91,7 @@ namespace CodingTest
             object obj = (object) Console.ReadLine();
             Console.WriteLine(obj);
 
-            var properties = GetProperties(obj);
-
-            foreach (var p in properties)
-            {
-                string name = p.Name;
-                var value = p.GetValue(obj);
-            }
-
-        }
-
-        private static PropertyInfo[] GetProperties(object obj)
-        {
-            return obj.GetType().GetProperties();
+            
         }
 
         #endregion

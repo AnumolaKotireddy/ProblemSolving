@@ -1,0 +1,39 @@
+<div class="titlecls">
+  <h4> {{title}}  </h4>
+</div>
+<div style="width: 50%;float:left">
+  <form novalidate [formGroup]="testForm">
+    <div class="form-group"> 
+      <div for="txt1" class="control-label">Enter any text</div>
+      <input type="text" class="k-textbox" formControlName="txt1"/> 
+
+    </div>
+
+    <div *ngIf="reversemsg.length>0">
+        Reverse :- {{reversemsg}}
+    </div>
+
+    <button type="button" class="btn" (click)="Reverse()" style="margin: 5px;">Reverse</button>
+
+    <div style="color: red;">
+      {{ErrMsg1}}
+    </div>
+  </form>
+</div>
+
+<div style="width: 50%;float: right;">
+  <form novalidate [formGroup]="findkeysForm">
+    <div class="form-group"> 
+      <div for="txtkeys" class="control-label">Enter any text</div>
+      <input type="text" class="k-textbox" formControlName="txtkeys"/> 
+
+    </div>
+
+    <div *ngIf="keyvals.length>0">
+        Reverse :- {{keyvals}}
+    </div>
+
+    <button type="button" class="btn" (click)="FindKeys()" style="margin: 5px;">Find Keys</button>
+  </form>
+</div>
+<router-outlet></router-outlet>
